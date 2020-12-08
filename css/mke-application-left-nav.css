@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contentAreaWrapper{width:100%;max-width:1150px;margin:0% auto 0% auto;position:relative;}
+
+/* LEFT ZONE */
+#leftZone{}
+#leftZone .Aggregation{}
+#leftNavContainer{margin-bottom:35px;background:#f2f2f2;border-top:3px solid #166085;}
+#leftNavContainer .grey > ul{padding:0px 15px 15px 15px;}
+#leftZone{width:30%;margin-right:5%;float:left;margin-bottom:35px;margin-top:55px;}
+#leftZone #leftNavContainer h3{font-size:22px;line-height:30px;padding:15px;color:#166085;margin-bottom:0px;}
+#leftNavContainer ul{list-style:none;margin:0px;padding:0px;}
+#leftNavContainer ul li{margin:0px;padding:0px 0px 0px 0px;list-style:none;background:none;}
+#leftNavContainer ul li a{text-decoration:none;display:block;border-bottom:1px solid #ddd;line-height:26px;font-size:18px;padding:10px 0px 10px 0px;font-family: 'Oswald', sans-serif;font-weight:400;}
+#leftNavContainer ul li a:hover{color:#166085;}
+#leftNavContainer ul li:last-child a{border-bottom:0px;}
+#leftNavContainer ul li a.current{color:#166085;}
+#leftNavContainer ul ul li a{text-decoration:none;border-bottom:none;box-sizing:border-box;display:block;line-height:26px;font-size:16px;padding:5px 0px 5px 0px;color:#333;}
+#leftNavContainer ul ul li a:hover{color:#166085;}
+
+
+#leftNavContainer > .grey > ul > li:first-child{border-top: 1px solid #ddd;}
+#leftNavContainer > .grey > ul > li a{margin-left:40px;}
+#leftNavContainer ul ul{display:none;padding-bottom:15px;padding-top:15px;}
+#leftNavContainer ul li.OpenListItem ul{display:block;border-bottom:1px solid #ddd;}
+#leftNavContainer ul li.OpenListItem span.OpenItem{display:none;}
+#leftNavContainer ul li.ClosedListItem span.CloseItem{display:none;}
+#leftNavContainer ul ul{border-bottom:1px solid #ddd;padding-bottom:15px;}
+#leftNavContainer ul li span.icon{float:left;background: #fff none repeat scroll 0 0;border: 1px solid #ccc;border-radius: 50%;display: inline-block;font-size: 12px;height: 31px;text-align: center;width: 31px;margin-right:10px;margin-top:7px;text-align:center;}
+#leftNavContainer ul li span.icon i{box-sizing: border-box;color: #166085;position: relative;top: 3px;margin-left:1px;}
+#leftNavContainer ul li span.icon:hover{cursor:pointer;}
+#leftNavContainer ul li span.icon:hover i{color:#333;}
+
+
+@media screen and (max-width:1200px){
+#leftZone{width:90%;margin:0% 5% 35px 5% !important;}}
+#centerZone{width:100%;margin-right:0px;}
+
+/* CENTER ZONE */
+#contentArea{width:65%;float:right;clear:none;margin-bottom:35px;}
+@media screen and (max-width:1200px){
+#contentArea{width:100%;float:left;}}

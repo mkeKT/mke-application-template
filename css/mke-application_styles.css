@@ -1,0 +1,325 @@
+/* 	Titan CMS base 6.6 */
+
+@import '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* ==========================================================================================  RESETS */
+	.titanWkst ul li{color:#333 !important;font-family:Verdana,Geneva,Arial,Helvetica,sans-serif !important;}
+	.mkeAppBody .input,
+	.mkeAppBody input,
+	.mkeAppBody select,
+	.mkeAppBody textarea,
+	.mkeAppBody p,
+	.mkeAppBody blockquote,
+	.mkeAppBody ol,
+	.mkeAppBody ul,
+	.mkeAppBody dl,
+	.mkeAppBody div,
+	button{color:#333;font-family: 'Lato', sans-serif;font-size:16px;line-height:22px;text-size-adjust:none;font-size-adjust:none;}
+	.titanDisplay{background:#fff;}
+	html{-webkit-text-size-adjust:none !important;text-size-adjust:none !important;}
+	
+	.mkeAppBody *{box-sizing:border-box;}
+	
+	img{border:0;}
+	hr{background-color:#ddd;border:0;color:#ddd;height:1px;}
+	
+	a:focus,
+	a:hover,
+	a:active{color:#333;text-decoration:underline;}
+	
+	a:hover img,
+	a:focus img,
+	a:active img{background:0;border:0;}
+	
+	a{color:#207194;text-decoration:none;}
+	a:hover{cursor:pointer;}
+	
+
+
+
+/* ========================================================================================== Text Editor Drop Downs */
+	h1{font-family: 'Oswald', sans-serif;font-weight:400;font-size:36px;color:#333;line-height:42px;margin-bottom:10px;}
+	h2{font-family: 'Oswald', sans-serif;font-weight:400;font-size:26px;color:#333;line-height:36px;margin-bottom:10px;}
+	h3{font-family: 'Oswald', sans-serif;font-weight:400;font-size:22px;color:#333;line-height:30px;margin-bottom:5px;}
+	h4{font-family: 'Oswald', sans-serif;font-weight:400;font-size:18px;color:#333;line-height:30px;margin-bottom:5px;}
+	h5{font-family: 'Oswald', sans-serif;font-weight:400;font-size:16px;color:#333;line-height:24px;margin-bottom:5px;}
+	h6{font-family: 'Oswald', sans-serif;font-weight:400;font-size:14px;color:#333;line-height:22px;margin-bottom:5px;}
+	h1 a, h2 a,h3 a, h4 a, h5 a, h6 a{color:#207194;}
+	@media screen and (max-width:650px){
+	h1{font-size:32px;line-height:36px;margin-bottom:5px;}}
+
+
+	/* BUTTONS */
+	.Button{}
+	.mkeAppBody input[type="button"],
+	.mkeAppBody input[type="submit"],
+	.Button a{color:#166085 !important;background:#f7f7f7;font-size:16px;display:inline-block;position:relative;border:2px solid #ccc;font-weight:600;-webkit-appearance:none;}
+	.Button2 a{color:#fff !important;background:#166085;font-size:16px;display:inline-block;position:relative;border:2px solid #ccc;font-weight:600;-webkit-appearance:none;}
+	.mkeAppBody input[type="button"]:hover,
+	.mkeAppBody input[type="submit"]:hover,
+	.Button a:hover,.Button a:focus,.Button a:active{text-shadow:none;background:#fff;cursor:pointer;}
+	.Button2 a:hover,.Button2 a:focus,.Button2 a:active{background:#207194;}
+	
+	/* UNORDERED LIST ITEMS */
+	#mainBody .Freeform ul{}
+	#mainBody .Freeform ul li{background:url("images/Bullet.png") no-repeat 0px 8px;}
+
+	
+	
+	
+
+
+/* ========================================================================================== PAGE LAYOUT */
+
+	/* HEADER WRAPPER */
+	#headerWrapper{box-shadow: 0 0 5px #333;border-bottom: 5px solid rgba(255, 255, 255, 0.5);background:#eee;}
+	#headerWrapperInside{float:left;width:100%;height:100%;}
+	#topNavWrapper{background:#166085;}
+	#WhiteLine{width:100%;display:block;height:1px;position:absolute;bottom:-5px;background:#fff;z-index:1;}
+	
+	/* LOGO */
+
+	/* TOP CONTROLS COUNTY */
+	#topControls ul li a{font-family: 'Oswald', sans-serif;font-size:14px;line-height:20px;font-weight:400;color:#fff;}
+	#topControls ul li a:hover{background-color:#207294;}
+	#topControls ul li.Selected a{background-color:#207294 !important;}
+	#topControls ul.BackToMilwaukee li a{background:url('images/city2013_logo-40.png') no-repeat 15px 5px;}
+	#topControls ul.BackToMilwaukee li a:hover{background-color:#207294;}
+	#topControls .MenuContainer{background:#207294;}
+	#topControls .MenuContainerInside{background:#207294;}
+	#topControls .MenuContainer .Freeform img{border:2px solid #166085;}
+	#topControls .MenuContainer .Freeform *{color:#fff;}
+	#topControls .MenuContainer ul li a{color:#fff;font-size:18px;background-color:#166085 !important;border-bottom:1px solid #62b8c4;border-right:1px solid #62b8c4;line-height:24px;text-transform:none;}
+	#topControls .MenuContainer ul li:hover{background-color:#207294 !important;}
+	#topControls .MenuContainer ul li.ItemVisible a{background-color:#207294 !important;border-right:none;}
+	#topControls .MenuContainer ul li a{background:none;border:none;border-bottom:1px solid #62b8c4;color:#dacab2;font-size:16px;}
+	#topControls .MenuContainer ul li a:hover{color:#fff;}
+	#topControls .MenuContainer ul li:last-child a{border-bottom:0px;}
+	#topControls #MegaMenu1 ul li:first-child a{ background:url('../ClientCss/images/Find.png') no-repeat center left;padding-left:60px;}
+	#topControls #MegaMenu1 ul li:nth-child(2) a{ background:url('../ClientCss/images/Pay.png') no-repeat center left;padding-left:60px;}
+	#topControls #MegaMenu1 ul li:nth-child(3) a{ background:url('../ClientCss/images/Attend.png') no-repeat center left;padding-left:60px;}
+	#topControls #MegaMenu1 ul li:nth-child(4) a{ background:url('../ClientCss/images/Apply.png') no-repeat center left;padding-left:60px;}
+	#topControls #MegaMenu1 ul li:nth-child(5) a{ background:url('../ClientCss/images/Report.png') no-repeat center left;padding-left:60px;}
+	#topControls .MenuContainer ul ul li a{background-image:none !important;}
+	#topControls .MenuContainer ul ul li a:hover{color:#ccc;}
+	
+	
+	/* TOP CONTROLS DEPARTMENT */
+	#departmentTopControls {
+	 /* background: -webkit-linear-gradient(330deg, #e3e3e9 0%, #fee 60%, #e3e3e9 100%);
+	  background: -o-linear-gradient(330deg, #e3e3e9 0%, #fee 60%, #e3e3e9 100%);
+	  background: linear-gradient(60deg, #e3e3e9 0%, #fee 60%, #e3e3e9 100%);*/
+		 background:url("images/PatternGrey.jpg");
+	}
+	#departmentTopControls ul li a{color: #166085;font-family: "Oswald",sans-serif;font-size: 18px;font-weight: 400;line-height: 23px;text-transform: uppercase;display: block;padding: 25px 16px;}
+	#departmentTopControls > .siteBounds > ul > li > a.current{color:#773C00;}
+	#departmentTopControls ul ul li a{color:#fff;font-size:16px;background-color:#4b7447 !important;border-bottom:1px solid #62b8c4;line-height:18px;text-transform:none;}
+	#departmentTopControls ul li:hover a{background-color:#166085 !important;color:#fff !important;}
+	#departmentTopControls ul ul li:hover a{background-color:#207294 !important;color:#fff;}
+
+
+	
+	/* MOBILE NAV BUTTON */
+	#mobileMenuButton a{background:#166085;border:2px solid #fff;}
+	#mobileMenuButton a i{color:#fff;margin-left:4px;margin-top:3px;text-shadow: 1px 1px 0 #333;font-size:20px;}
+	#mobileMenuButton a:hover{background:#166085;cursor:pointer;}
+	
+	/* MOBILE SEARCH BUTTON */
+	#mobileSearchButton a{background:#166085;border:2px solid #fff;}
+	#mobileSearchButton a i{color:#fff;margin-left:5px;margin-top:2px;text-shadow: 1px 1px 0 #333;font-size:18px;}
+	#mobileSearchButton a:hover{background:#166085;cursor:pointer;}
+	
+	/* DESKTOP SEARCH BUTTON */
+	#desktopSearchButton{margin-top:11px;margin-left:15px;margin-bottom:24px;}
+	#desktopSearchButton a{border:2px solid #ccc;}
+	#desktopSearchButton a i{color:#166085;margin-left:2px;margin-top:-2px;font-size:18px;position:relative;top:-1px;}
+	#desktopSearchButton a:hover{background:#f2f2f2;cursor:pointer;}
+	
+	
+	/* DEPARTMENT MOBILE MENU */
+	#departmentMobileNavWrapper{box-shadow: 0 0 5px #333;background: url('images/backgroundtop.jpg');}
+	#departmentMobileNavWrapper .topMobile {background: #207194;}
+	#departmentMobileNavWrapper .topMobile h4{color:#fff;font-weight:400;text-transform:uppercase;}
+	#departmentMobileNavWrapper .closeMenu{background:#fff;border-radius:50%;color:#333;font-weight:900;}
+	#departmentMobileNavWrapper span.close{border-radius:50%;background-color:#166085;border:2px solid #fff;font-family: 'Lato', sans-serif;font-weight:700;color:#fff;font-size:20px;}
+	#departmentMobileNavWrapper span.close:hover{cursor:pointer;background-color:#005c62;}	
+	#departmentMobileNavWrapper ul li{list-style:none;line-height:18px;border-bottom:1px dotted #061d29;}
+	#departmentMobileNavWrapper ul li i{font-size:13px;color:#fff;border-right:1px dotted #061d29;}
+	#departmentMobileNavWrapper ul li i:hover{background-color:rgba(0, 0, 0, 0.3);}
+	#departmentMobileNavWrapper ul li a{font-size:18px;line-height:30px;font-family: 'Oswald', sans-serif;font-weight:400;color:#fff;font-weight:600;}
+	#departmentMobileNavWrapper ul li a:hover{background-color:rgba(0, 0, 0, 0.3);}
+	#departmentMobileNavWrapper ul ul li{border-bottom:0px;}
+	#departmentMobileNavWrapper ul ul li a{font-size:16px;line-height:30px;color:#fff;background:none;text-transform:none;font-weight:400;}
+	#departmentMobileNavWrapper ul ul li a:hover{color:#ccc;}
+
+	
+	#VisitMilwaukeeCounty h4{color:#dacab2;}
+	#VisitMilwaukeeCounty h5 a{color:#fff;text-decoration:underline;}
+	#VisitMilwaukeeCounty h5 a:Hover{color:#dacab2;text-decoration:none;}
+	
+	
+	/* SEARCH DESKTOP */
+	.searchWrapper{background: rgba(255, 255, 255, 0.5);border:1px solid #fff;border-radius:40px;padding:5px;}
+	.searchWrapper .searchBarContainer{background:#fff;}
+	.searchWrapper .searchBarContainer input[type="text"]{border:none;color:#333 !important;background:none;font-size:16px;font-style:italic;font-family: 'Lato';}
+	.searchWrapper .searchBarContainer button{border:none;background:#4b7447;border-radius:25px;color:#fff;font-size:18px;line-height:24px;font-family: "Oswald",sans-serif;font-weight:400;}
+	.searchWrapper .searchBarContainer button:hover{cursor:pointer;background:#335a30;}
+    
+
+    /* SEARCH BAR BLOCK */	
+    .searchOuterWrapper{background: rgba(255, 255, 255, 0.5);border:1px solid #fff;border-radius:40px;padding:5px;}
+	.searchOuterWrapper .searchInnerWrapper{background:#fff;}
+	.searchOuterWrapper .searchInnerWrapper input[type="text"]{border:none;color:#333 !important;background:none;font-size:16px;font-style:italic;font-family: 'Lato';}
+	.searchOuterWrapper .searchInnerWrapper input[type="button"]{border:none;border-radius:25px;background:#d04541;color:#fff!important;font-size:18px;line-height:24px;font-family: "Oswald",sans-serif;font-weight:400;}
+	.searchOuterWrapper .searchInnerWrapper input[type="button"]:hover {background:#bd132c; cursor:pointer;}
+	.searchOuterWrapper .suggestionWrapper {border-bottom-left-radius:5px;border-bottom-right-radius:5px;width:calc(100% - 60px);max-height:170px;overflow-y:auto; position: absolute;background:#fff;text-align:left;z-index:1000;margin-top:6px;left:0px;right:0px;margin-left:auto;margin-right:auto solid #ccc;box-sizing:border-box;}
+    .searchOuterWrapper .suggestionWrapper .suggestedTerm {padding:5px 10px;cursor:pointer;text-shadow:none;}
+    .searchOuterWrapper .suggestionWrapper .suggestedTerm:hover {background-color:#f5f5f5;}
+
+
+	/* SEARCH DETAILS*/
+	.SearchBar .DataFilter2{display:none;}
+	.docMatch{margin-bottom:25px;}
+	.titleString{display:none;}
+    ul.searchSegments {padding-left:0;margin-bottom:0px;position:absolute;bottom:0px;z-index:9;left:0;right:0;margin:auto;width:100%;text-align:Center;overflow-x: auto;}
+ 	ul.searchSegments li.header{display:none;}
+    ul.searchSegments li {white-space: nowrap;display:inline-block;color:#fff;font-size:18px;text-shadow: 1px 1px 0px #333;border-top-left-radius: 5px;border-top-right-radius: 5px; padding:20px 25px;margin-right:5px;margin-left:5px;font-family: 'Oswald', sans-serif;list-style: none;display: inline-block;}
+    ul.searchSegments li.active{background-color:#fff;color:#333;text-shadow:none;}
+    ul.searchSegments li.segment:hover{cursor:pointer;color:#fff;}
+	ul.searchSegments li.active:hover{background:#fff !important;color:#333;}
+    ul.searchSegments li h4 {margin-bottom: 0;line-height: 18px;}
+
+	@media screen and (max-width:1150px){
+	ul.searchSegments{display:flex;}
+	ul.searchSegments li{flex-basis: 100%;}}
+
+	
+	/* FEATURE WRAPPER */
+	#featureText{text-shadow:1px 1px 0px #333;}
+	#featureText *{color:#fff;}
+	
+	/* PAGE TOOLS BREADCRUMB */
+	#pageTools{background:rgba(0, 0, 0, 0.4);text-shadow:none;}
+	#pageTools #breadCrumbContainer ul li{list-style:none;font-size:14px;}
+	#pageTools #breadCrumbContainer ul li a{color:#fff;}
+	#pageTools #breadCrumbContainer ul li a:hover{color:#ccc !important;}
+	
+	/* PAGE TOOLS EMAIL AND PRINT */
+	#pageTools ul.EmailPrint{}
+	#pageTools ul.EmailPrint li{list-style:none;}
+	#pageTools ul.EmailPrint li span{color:#fff;border-left:1px dotted #ccc;}
+	#pageTools ul.EmailPrint li:first-child span{border-left:none;}
+	#pageTools ul.EmailPrint li span:hover{color:#ccc;cursor:pointer;}
+	
+	/* PAGE TOOLS SOCIAL SHARE ICONS */
+	#pageTools ul.Social{margin-top:3px;}
+	#pageTools ul.Social li{list-style:none;}
+	#pageTools ul.Social li span{border-right:1px dotted #ccc;color:#fff;}
+	#pageTools ul.Social li span:hover{color:#ccc;cursor:pointer;}
+	#pageTools ul.Social li a i{}
+	
+	
+	
+	/* CONTENT AREA */
+	#mainBody{box-shadow: 0 0 5px #333;}
+	#WhiteLine2{width:100%;display:block;height:1px;position:absolute;top:0px;background:#fff;}
+	
+	/* DEPARTMENT FOOTER */
+	#departmentFooter .WhiteBlock{background:url("../ClientCss/images/PatternGreyDark");}
+	#departmentFooter .wrapme{border-top:2px solid #773C00;}
+
+	/* CITY WIDE FOOTER */
+	#footer{border-top:2px solid #333;}
+	#footer{background:url("images/bgFooter.jpg");}
+	/*#footer .WhiteBlock{background:#231f20;}*/
+	#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer p {color: #fff;}
+	#footer a{color:#6ca5ac;}
+	#footer a:hover{color:#fff;}
+	#footer ul{padding:0px;}
+	#footer ul li{list-style:none;}
+	#footer ul li a:hover{color:#ccc;}
+
+	
+	/* COPYRIGHT */
+	#copyRight{background:#34393d;}
+	#copyRight div{color:#fff;}
+
+	
+	/* POWERED BY */
+	#poweredBy{background:#111;}
+	#poweredBy div,
+	#poweredBy a{color:#ccc;font-size:13px; text-align: center;}
+	
+	/* SCROLL TOP BUTTON */
+	#scrollTop #scrollTopButton{background:#207194;}
+	#scrollTop #scrollTopButton:hover{background:#166085;}
+
+	
+
+	
+						
+/* ========================================================================================== SPECIAL CLASS NAMES */	
+	/* ERROR MESSAGEAS */
+	div.ErrorMessage,
+	div.ErrorMessage div{color:red !important;font-size:14px;line-height:20px;}
+	
+	
+	/* BOX STYLE */
+	.BoxStyle{border-top:4px solid #bd1e2c;}
+	
+	/* IMAGE WITH TEXT */
+	.ImageWithText{border-top:3px solid #773C00;}
+	
+	
+	/* LIMIT HEIGHT */
+	.SeeMoreLessButton span.text{color:#773C00;}
+	.SeeMoreLessButton span.icon i{color:#773C00;}
+
+	/* === NEWS & EVENT CARDS === */
+	.NewsSliderCard{background:#fff;box-shadow: 0 0 5px #333;border-top:3px solid #773C00;}
+	.NewsSliderCard a{color:#166085;}
+	.NewsSliderCard .Date{background:#773C00;color:#fff !important;font-family: "Oswald",sans-serif;font-size:14px;line-height:18px;}
+	.bx-wrapper .bx-loading {background: #fff url("images/bx_loader.gif") no-repeat scroll center center;}
+	.bx-wrapper .bx-controls-direction a{font-size:22px;background:#fff;border:1px solid #ccc;}
+	.bx-wrapper .bx-controls-direction a:hover{background:#bd1e2c;}
+	.bx-wrapper .bx-controls-direction a:hover i{color:#fff;}
+	.bx-wrapper .bx-controls-direction a i{color:#bd1e2c;}
+
+	
+	/* === EVENTS SLIDER CARDS === */
+	.EventsSliderCard{background:#fff;box-shadow: 0 0 5px #333;border-top:3px solid #bd1e2c;}
+	.EventsSliderCard *{color:#333;}
+	.EventsSliderCard a{color:#166085;}
+	.EventsSliderCard a:hover{color:#333;}
+	.EventsSliderCard .Date{font-weight:bold;}
+	.EventsSliderCard .Location{font-weight:bold;}
+	
+	
+/* ========================================================================================== BLOCKS */
+/* the blocks will have generic styling based off the blocks.css file */
+/* if you want a block to display differently add the code here with comments */
+/* if no additional styling is added - blocks will generally display okay, but may not fit in with the design of the site */
+
+	
+	/* FAQ ACCORDION */
+	.FAQAccordion .accordionHeading{border-top:none !important;border-bottom:1px dotted #999;}
+	.FAQAccordion .accordionHeading i{font-size:25px;color:#773C00;}
+	.FAQAccordion .accordionHeading:hover i{color:#bd1e2c;}
+
+
+	
+	/* MASTER FILTER AND DATA LIST MOBILE */
+	@media screen and (max-width:1200px){
+	span.filterButton{font-weight:900;color:#fff;font-family: 'Oswald', sans-serif;}
+	span.closeButton{border-radius:50%;border:2px solid #fff;font-family: 'Lato', sans-serif;font-weight:700;color:#fff;font-size:20px;}
+	span.closeButton:hover{cursor:pointer;background:#333;}}
+	
+	
+	/* === A-Z FILTER === */
+	.jumpMenu{}
+	.jumpMenu ul{}
+	.jumpMenu ul li{background:#eee;border:1px solid #ccc;}
+	.jumpMenu ul li a{background:#f4efe3;font-weight:700;}
+	
+	
+
