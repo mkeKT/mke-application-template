@@ -1,0 +1,211 @@
+<!doctype html>
+<html id="htmlTag" xmlns="http://www.w3.org/1999/xhtml" class="Firefox 59_0 Firefox59 WinNT titanDisplay">
+<head>
+<meta content="initial-scale=1,maximum-scale=4.0,minimum-scale=1.0,user-scalable=0,width=device-width" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Oswald:400,300,700" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script src="scripts/NWS.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+<script language="JavaScript" type="text/javascript" src="scripts/mke-application.js"></script>
+<link type="text/css" rel="stylesheet" href="css/mke-application.css" />
+<link type="text/css" rel="stylesheet" href="css/mke-application_styles.css" />
+<title id="pageTitle">MKE Application Home</title>
+<link rel="shortcut icon" href="css/images/favicon-mke.png" type="image/x-icon" />
+<link rel="icon" href="css/images/favicon-mke.png" type="image/x-icon" />
+<style>
+#featureImage {
+    background-image: url("css/images/imgSkylineFromPier.jpg");
+}
+</style>
+</head>
+<body id="bodyTag" class="mkeAppBody">
+<div id="headerWrapper">
+  <div id="headerWrapperInside">
+    <div id="topNavWrapper">
+      <div id="topControls">
+        <div class="siteBounds">
+          <ul class="BackToMilwaukee">
+            <li><a target="_blank" href="https://city.milwaukee.gov" tabindex="0">City of Milwaukee</a></li>
+          </ul>
+          <ul>
+            <li class="topSub"><a target="_blank" tabindex="0" href="https://milwaukee.gov/Information-and-Services/Directory">Directory</a></li>
+            <li class="topSub"><a target="_blank" tabindex="0" href="https://milwaukee.gov/residents.htm">Residents</a></li>
+            <li class="topSub"><a target="_blank" tabindex="0" href="https://milwaukee.gov/Business.htm">Business</a></li>
+            <li class="topSub"><a target="_blank" tabindex="0" href="https://milwaukee.gov/News-Events">News &amp; Events</a></li>
+          </ul>
+          <ul id="actionLinks">
+            <li><a href="tel:+1-414-286-2489" target="_blank" tabindex="0"><em class="fa fa-lg fa-mobile-phone">&nbsp;</em>CALL for Action: 414-286-CITY</a></li>
+            <li><a href="https://milwaukee.gov/action" target="_blank" tabindex="0"><em class="fa fa-medium fa-mouse-pointer">&nbsp;</em>CLICK for Action</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="logoContainer">
+      <div id="nameTag">
+        <div>
+          <p> <a href="#">Name of Application</a> </p>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenuButton"><a title="Open Menu"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+    <!--	  <div id="mobileSearchButton" class="mobileSearchButtonHome" style="display: block;"><a title="Search"><i class="fa fa-search" aria-hidden="true"></i></a></div>-->
+    <div id="scrollTop" style="display: none;"><a href="#bodyTag" id="scrollTopButton"><i class="fa fa-chevron-up fa-2x"></i></a></div>
+    <div id="departmentTopNavWrapper">
+      <div id="departmentTopControls">
+        <div class="siteBounds"> 
+          <!-- <div id="desktopSearchButton"><a title="Search" tabindex="0"><i class="fa fa-search" aria-hidden="true"></i></a></div>--> 
+          <!--BeginNoIndex-->
+          <ul class="menu">
+            <li class="navFirst"><a href="#">APP Link 1</a>
+              <ul style="">
+                <li><a target="_self" href="#">APP Link 1a</a></li>
+                <li><a target="_self" href="#">APP Link 1b</a></li>
+                <li><a target="_self" href="#">APP Link 1c</a></li>
+              </ul>
+            </li>
+            <li><a target="_self" href="#">APP Link 2</a>
+              <ul style="">
+                <li><a target="_self" href="#">APP Link 2a</a></li>
+                <li><a target="_self" href="#">APP Link 2b</a></li>
+                <li><a target="_self" href="#">APP Link 2c</a></li>
+              </ul>
+            </li>
+            <li><a href="#">APP Link 3</a>
+              <ul style="">
+                <li><a target="_self" href="#">APP Link 3a</a></li>
+                <li><a target="_self" href="#">APP Link 3b</a></li>
+                <li><a target="_self" href="#">APP Link 32c</a></li>
+              </ul>
+            </li>
+            <li><a href="#">APP Link 4</a>
+              <ul style="">
+                <li><a target="_self" href="#">APP Link 4a</a></li>
+                <li><a target="_self" href="#">APP Link 4b</a></li>
+                <li><a target="_self" href="#">APP Link 4c</a></li>
+              </ul>
+            </li>
+            <li class="navLast"><a href="#">APP Link 5</a>
+              <ul style="">
+                <li><a target="_self" href="#">APP Link 5a</a></li>
+                <li><a target="_self" href="#">APP Link 5b</a></li>
+                <li><a target="_self" href="#">APP Link 5c</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--EndNoIndex--> 
+        </div>
+      </div>
+    </div>
+    <div id="WhiteLine"></div>
+  </div>
+</div>
+<div id="MobileSearchBarWrapper" style="display: none;">
+  <div class="siteBounds">
+    <div class="searchOuterWrapper">
+      <div class="searchInnerWrapper">
+        <input type="text" id="mobileSearchBar_searchTerms" name="mobileSearchBar_searchTerms" maxlength="200" value="" autocomplete="off" onkeypress="if(event.keyCode==13 || event.which==13) return false;" placeholder="Search Milwaukee City..." aria-label="Search by Keyword" onkeyup="
+                DefaultButton(event, document.getElementById('mobileSearchBar_searchGo'));
+                
+                  NWS.SearchSegmentSupport.GetSuggestions(event, 75, 3, 2000, '/EN/City/Search', 'mobileSearchBar_', 5, true);
+                ">
+        &nbsp;
+        <input type="button" value="Search" id="mobileSearchBar_searchGo" name="mobileSearchBar_searchGo" class="search" aria-label="Search" onclick="
+              SearchSubmit('', document.getElementById('mobileSearchBar_searchTerms'))
+            ">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="MenuOpacity"></div>
+<div id="featureWrapper">
+  <div id="featureText">
+    <div class="siteBounds">
+      <div>
+        <h1>Application Name</h1>
+        <p>Application sub-title and description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+    </div>
+  </div>
+  <div id="featureImage"></div>
+</div>
+<div id="mainBody">
+  <div id="contentArea">
+    <div class="siteBounds">
+     
+        <h1>Content Column</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      
+    </div>
+  </div>
+</div>
+<div id="departmentFooter"> </div>
+<div id="footer">
+  <div class="siteBounds">
+    <p style="text-align:center"><a href="https://city.milwaukee.gov" target="_blank"><img alt="City of Milwaukee" src="css/images/LogoAndMark_White.png"></a></p>
+  </div>
+</div>
+<div id="poweredBy">
+  <div class="siteBounds"> <a> © 2019 City of Milwaukee </a> </div>
+</div>
+<div id="MobileMenuOpacity"></div>
+<div id="MobileSearchOpacity"></div>
+<div id="departmentMobileNavWrapper">
+  <div class="topMobile">
+    <h4>Menu</h4>
+    <span class="closeMenu">X</span> </div>
+  <div id="departmentMobileNavContainer">
+    <div id="departmentMobileNav"> 
+      <!--BeginNoIndex-->
+      
+      <ul class="menu">
+        <li class="navFirst"><a href="#">App Link 1</a>
+          <ul>
+            <li><a target="_self" href="#">APP Link 1a</a></li>
+            <li><a target="_self" href="#">APP Link 1b</a></li>
+            <li><a target="_self" href="#">APP Link 1c</a></li>
+          </ul>
+        </li>
+        <li><a href="#">App Link 2</a>
+          <ul>
+            <li><a target="_self" href="#">APP Link 2a</a></li>
+            <li><a target="_self" href="#">APP Link 2b</a></li>
+            <li><a target="_self" href="#">APP Link 2c</a></li>
+          </ul>
+        </li>
+        <li><a href="#">App Link 3</a>
+          <ul>
+            <li><a target="_self" href="#">APP Link 3a</a></li>
+            <li><a target="_self" href="#">APP Link 3b</a></li>
+            <li><a target="_self" href="#">APP Link 3c</a></li>
+          </ul>
+        </li>
+        <li><a href="#">App Link 4</a>
+          <ul>
+            <li><a target="_self" href="#">APP Link 4a</a></li>
+            <li><a target="_self" href="#">APP Link 4b</a></li>
+            <li><a target="_self" href="#">APP Link 4c</a></li>
+          </ul>
+        </li>
+        <li class="navLast"><a href="#">App Link 5</a>
+          <ul>
+            <li><a target="_self" href="#">APP Link 5a</a></li>
+            <li><a target="_self" href="#">APP Link 5b</a></li>
+            <li><a target="_self" href="#">APP Link 5c</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <!--EndNoIndex--> 
+    </div>
+    <div id="ActionLinksMobile">
+      <h4><a href="tel:+1-414-286-2489" linktype="9" target="_self"><em class="fa fa-lg fa-mobile-phone">&nbsp;</em>CALL for Action: 414-286-CITY</a></h4>
+      <h4><a href="https://milwaukee.gov/action" linktype="2" target="_blank"><em class="fa fa-medium fa-mouse-pointer">&nbsp;</em>CLICK for Action</a></h4>
+    </div>
+  </div>
+</div>
+</body>
+</html>
